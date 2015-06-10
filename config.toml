@@ -32,15 +32,15 @@ read-timeout = "5s"
 
   # Configure the graphite api
   [input_plugins.graphite]
-  enabled = false
-  # port = 2003
-  # database = ""
-  # udp_enabled = true
+  enabled = true
+  port = 2003
+  database = "carbon"
+  udp_enabled = true
 
   [input_plugins.udp]
-  enabled = false
-  # port = 4444
-  # database = ""
+  enabled = true
+  port = 4444
+  database = "udp"
 
 # Raft configuration
 [raft]
